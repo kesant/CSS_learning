@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+
+.foto-perfil{
+    font-size: small;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+header{
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/baner.jpg');
+}
+
+ul{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: large;
+}
+
+p{
+    text-indent: 5em;
+    font-size: large;
+}
+
+h1{
+    background-color: #C4C4C4;
+    color: #005677;
+
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h2{
+    background-color: #C4C4C4;
+    color: #005677;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+
+footer{
+    background-color: #005677;
+    color: white;
+    margin-top: 15%;
+    text-align: center;
+    padding: 10px;
+}
+
+#rs{
+    padding-left: 20px;
+}
+
+.alineado-texto{
+    text-align: center;
+}
+div{
+    padding: 100px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}

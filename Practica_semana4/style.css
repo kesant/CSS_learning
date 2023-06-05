@@ -16,16 +16,18 @@ footer{
     color: #D9D9D9;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content:;
+    justify-content:space-between;
     align-content: center;
+
 
 }
 main{
     background-color: #F3F3F3;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 a{
     text-decoration: none;
@@ -40,13 +42,31 @@ a{
 .menu-footer{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .delivery{
     background-image: url(/images/delivery.svg);
+    background-position: center;
+    border-radius: 10px;
+    width: 50vh;
+    height: 50vh;
     background-size: cover;
+    margin: 30px 10px 30px;
 }
 .podium{
     background-color: #FFFFFF;
+    margin: 30px 10px 30px;
+    border-radius: 10px;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#top5-zone{
+    display: flex;
+
 }
 #letras-rojas{
     color: red;

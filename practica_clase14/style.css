@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+#caja-descuentos{
+    background-color: #D1891C;
+
+}
+#caja-cards{
+    background-color: #00669F;
+    color: white;
+}
+#cartilla{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#redondeo-imgenes{
+    position: absolute;
+    background-image: url(/images/batman.svg);
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 9vh;
+    width: 7vw;
+        /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    left: 90px;
+    top: 63%;
+}
+#imagenes-fondo{
+    width: 20vw;
+    height: 20vh;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+
+}
+#contenido{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+}
+#boton{}

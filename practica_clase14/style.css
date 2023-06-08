@@ -1,16 +1,22 @@
 *{
     margin: 0;
 }
+body{
+    position: relative;
+}
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 footer{
-    display: flex;
-    justify-content: space-around;
+    width: 100vw;
     background-color:#00669F ;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom:0%;
 }
 #caja-descuentos{
     background-color: #D1891C;
@@ -28,57 +34,53 @@ footer{
     justify-content: space-around;
     width:20vw;
     box-sizing: border-box;
+    margin: 8vh 10vw 8vh 10vw;
 
 }
 /*imagenees*/
 
 #redondeo-imgenes-batman{
-    position: absolute;
     background-image: url(/images/batman.svg);
+    position: absolute;
         /* cambia estos dos valores para definir el tamaño de tu círculo */
-    height: 9vh;
-    width: 7vw;
+    height: 6em;
+    width: 6em;
         /* los siguientes valores son independientes del tamaño del círculo */
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    left:30%;
-    bottom:60%;
-    z-index: 1;
+    bottom: 87%;
     box-sizing: border-box;
 }
 
 #imagenes-fondo-batman{
     background-image: url(/images/fondo-batman.svg);
-    width: 20vw;
     height: 15vh;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-sizing: border-box;
+    flex-grow: 5;
     
 }
 /*mujer maravilla*/
 #redondeo-imgenes-mujerm{
-    position: absolute;
     background-image: url(/images/mujer-maravilla.svg);
+    position: absolute;
         /* cambia estos dos valores para definir el tamaño de tu círculo */
-    height: 9vh;
-    width: 7vw;
+    height: 6em;
+    width: 6em;
         /* los siguientes valores son independientes del tamaño del círculo */
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    left:30%;
-    bottom:60%;
-    z-index: 1;
+    bottom: 87%;
     box-sizing: border-box;
 }
 
 #imagenes-fondo-mujerm{
     background-image: url(/images/fondo-mujer-maravilla.svg);
-    width: 20vw;
     height: 15vh;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -88,25 +90,22 @@ footer{
 
 /*Superman*/
 #redondeo-imgenes-superman{
-    position: absolute;
     background-image: url(/images/superman.svg);
+    position: absolute;
         /* cambia estos dos valores para definir el tamaño de tu círculo */
-    height: 9vh;
-    width: 7vw;
+    height: 6em;
+    width: 6em;
         /* los siguientes valores son independientes del tamaño del círculo */
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    left:30%;
-    bottom:60%;
-    z-index: 1;
+    bottom: 87%;
     box-sizing: border-box;
 }
 
 #imagenes-fondo-superman{
     background-image: url(/images/fondo-superman.svg);
-    width: 20vw;
     height: 15vh;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -115,25 +114,23 @@ footer{
 }
 /*Harley*/
 #redondeo-imgenes-harley{
-    position: absolute;
+
     background-image: url(/images/harley.svg);
+    position: absolute;
         /* cambia estos dos valores para definir el tamaño de tu círculo */
-    height: 9vh;
-    width: 7vw;
+    height: 6em;
+    width: 6em;
         /* los siguientes valores son independientes del tamaño del círculo */
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    left:30%;
-    bottom:60%;
-    z-index: 1;
+    bottom: 87%;
     box-sizing: border-box;
 }
 
 #imagenes-fondo-harley{
     background-image: url(/images/fondo-harley.svg);
-    width: 20vw;
     height: 15vh;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -146,11 +143,12 @@ footer{
 
 /* Contenido DE LA CARTILLA*/
 #contenido{
+    position: relative;
     background-color: #F3F3F3;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
     align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -166,5 +164,48 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+p#texto{
+    text-align: center;
+    padding:  0.2em;
+}
+p#character{
+    text-align: center;
+    flex-grow: 80;
+    padding-top: 0.2em;
 
+}
 
+@media(max-width:425px){
+    .cartilla{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:70vw;
+        box-sizing: border-box;
+        margin: 8vh ;
+    
+    }
+    #contenido{
+        position: relative;
+        background-color: #F3F3F3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 50px;
+    }
+    p#texto{
+        text-align: center;
+        padding:  0.2em;
+    }
+    p#character{
+        text-align: center;
+        flex-grow: 80;
+        padding-top: 0.2em;
+
+    }
+}

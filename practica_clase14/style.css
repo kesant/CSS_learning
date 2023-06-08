@@ -1,6 +1,17 @@
 *{
     margin: 0;
 }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:#00669F ;
+    color: white;
+}
 #caja-descuentos{
     background-color: #D1891C;
 
@@ -8,15 +19,20 @@
 #caja-cards{
     background-color: #00669F;
     color: white;
+    font-size: 1.5rem;
 }
-#cartilla{
+.cartilla{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    width:20vw;
+    box-sizing: border-box;
 
 }
-#redondeo-imgenes{
+/*imagenees*/
+
+#redondeo-imgenes-batman{
     position: absolute;
     background-image: url(/images/batman.svg);
         /* cambia estos dos valores para definir el tamaño de tu círculo */
@@ -27,20 +43,128 @@
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    left: 90px;
-    top: 63%;
+    left:30%;
+    bottom:60%;
+    z-index: 1;
+    box-sizing: border-box;
 }
-#imagenes-fondo{
-    width: 20vw;
-    height: 20vh;
-    border-top-right-radius: 80px;
-    border-top-left-radius: 80px;
 
+#imagenes-fondo-batman{
+    background-image: url(/images/fondo-batman.svg);
+    width: 20vw;
+    height: 15vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+    
 }
+/*mujer maravilla*/
+#redondeo-imgenes-mujerm{
+    position: absolute;
+    background-image: url(/images/mujer-maravilla.svg);
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 9vh;
+    width: 7vw;
+        /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    left:30%;
+    bottom:60%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#imagenes-fondo-mujerm{
+    background-image: url(/images/fondo-mujer-maravilla.svg);
+    width: 20vw;
+    height: 15vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+    
+}
+
+/*Superman*/
+#redondeo-imgenes-superman{
+    position: absolute;
+    background-image: url(/images/superman.svg);
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 9vh;
+    width: 7vw;
+        /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    left:30%;
+    bottom:60%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#imagenes-fondo-superman{
+    background-image: url(/images/fondo-superman.svg);
+    width: 20vw;
+    height: 15vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+    
+}
+/*Harley*/
+#redondeo-imgenes-harley{
+    position: absolute;
+    background-image: url(/images/harley.svg);
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 9vh;
+    width: 7vw;
+        /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    left:30%;
+    bottom:60%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#imagenes-fondo-harley{
+    background-image: url(/images/fondo-harley.svg);
+    width: 20vw;
+    height: 15vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+/* Contenido DE LA CARTILLA*/
 #contenido{
+    background-color: #F3F3F3;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    justify-content:space-around;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 50px;
 }
-#boton{}
+#boton{
+    box-sizing: border-box;
+    background-color: #00669F;
+    color: white;
+    text-align: center;
+    width: 5em;
+    border-radius: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+

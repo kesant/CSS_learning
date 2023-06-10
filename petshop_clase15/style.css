@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+.fondo-bowl{
+    height:10rem;
+    background-image:url(/images/bowl-and-pet.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#patita-menu{
+    height: 1rem;
+}
